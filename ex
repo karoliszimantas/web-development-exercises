@@ -20,7 +20,7 @@ while True:
         print('negative integer')
     current_date = datetime.datetime.now()
     future_date = current_date.year + 100 - age
-    message = (name + ' will be one hundred years old in the year ' + str(future_date))
+    message = (f'{name} will be one hundred years old in the year {future_date}')
     print(message)
     num_message = int(input('How many copies'))
     if num_message == 'q':
@@ -53,6 +53,8 @@ with open('nameslist.txt') as file:
     names = file.read().splitlines()
     names_num = collections.Counter(names)
     print(names_num)
+
+
 
 
 
