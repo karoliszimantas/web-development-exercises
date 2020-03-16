@@ -1,4 +1,4 @@
-#1.Create a program that asks the user to enter their name and their age. Print out a message addressed to them that tells them the year that they will turn 100 years old.
+#Create a program that asks the user to enter their name and their age. Print out a message addressed to them that tells them the year that they will turn 100 years old.
 #Extras:
 #Add on to the previous program by asking the user for another number and printing out that many copies of the previous message.
 #Print out that many copies of the previous message on separate lines.
@@ -22,12 +22,12 @@ while True:
     future_date = current_date.year + 100 - age
     message = (name + ' will be one hundred years old in the year ' + str(future_date))
     print(message)
-    number_message = int(input('How many copies'))
-    if number_message == 'q':
+    num_message = int(input('How many copies'))
+    if num_message == 'q':
             sys.exit()
-    if number_message < 0:
+    if num_message < 0:
         print('Input needs to be a non-negative integer :(')
-    for i in range(0, number_message, +1):
+    for i in range(0, num_message, +1):
         print(message)
         
         
@@ -43,7 +43,7 @@ def new_list(list):
 new_list(list)
 
 
-#3.Given a .txt file that has a list of a bunch of names, count how many of each name there are in the file, and print out the results to the screen. I have a .txt file for you, if you want to use nameslist.txt .
+#Given a .txt file that has a list of a bunch of names, count how many of each name there are in the file, and print out the results to the screen. I have a .txt file for you, if you want to use nameslist.txt .
 
 
 import collections
@@ -51,5 +51,8 @@ import os
 
 with open('nameslist.txt') as file:
     names = file.read().splitlines()
-    names_number = collections.Counter(names)
-    print(names_number)
+    names_num = collections.Counter(names)
+    print(names_num)
+
+
+
